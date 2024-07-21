@@ -3,6 +3,9 @@ import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const CompanyMain = styled.div`
+background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%), #FFF;
+
+
   h2 {
   }
   .line {
@@ -57,7 +60,7 @@ const CompanyMain = styled.div`
 
   .tabContent {
     padding: 20px;
-    margin-bottom: 80px;
+    padding-bottom: 100px;
     .aboutGemedicare,
     .greeting {
       display: flex;
@@ -73,6 +76,11 @@ const CompanyMain = styled.div`
     .aboutGemedicare {
       display: block;
       > p:nth-of-type(1) {
+        font-size: 2rem;
+          width: 62%;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
         @media (max-width: 1919px) {
           font-size: 2rem;
           width: 70%;
@@ -128,6 +136,7 @@ const CompanyMain = styled.div`
 
       ul {
         display: flex;
+        justify-content: center;
         li {
           display: flex;
           align-items: center;
@@ -182,9 +191,9 @@ const About = () => {
         {activeTab === 0 && (
           <div className="aboutGemedicare">
             <p>
-              가은메디케어는 건강보험공단 정식 등록 업체로서, 가정용
-              산소발생기와 가정용 인공호흡기 임대 전문업체입니다. 호흡기 질환을
-              가진 환자들이 안전하고 편리하게 치료와 삶의 질 향상을 위해 끊임
+              가은메디케어는 건강보험공단 정식 등록 업체로서,
+              가정용 산소발생기와 가정용 인공호흡기 임대 전문업체입니다. 
+              호흡기 질환을 가진 환자들이 안전하고 편리하게 치료와 삶의 질 향상을 위해 끊임
               없이 노력할 것을 약속 드립니다.
             </p>
             <div className="line"></div>

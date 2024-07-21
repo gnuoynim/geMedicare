@@ -9,17 +9,18 @@ const LnbWrap = styled.ul`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  padding-right: 24px;
   > li {
     color: #111;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 2vh 1.5vw;
-    margin: 0 2.5vw;
+    padding: 1.5vh 1.5vw;
+    // margin: 0 2.5vw;
     white-space: nowrap;
     position: relative;
-
     cursor: pointer;
 
     &:nth-of-type(1) {
@@ -28,6 +29,9 @@ const LnbWrap = styled.ul`
     &:nth-last-child(1) {
       border-radius: 99px;
       background: #00b3ba;
+      &:hover a {
+        
+      }
       a {
         color: #fff;
       }
@@ -53,29 +57,30 @@ const SubDep = styled.div`
 const Submenu = styled.ul`
   display: ${(props) => (props.isOpen ? "block" : "none")};
   list-style: none;
-  padding: 20px 40px;
+  padding: 30px 20px;
   margin: 0;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.3);
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(5px);
+  box-shadow: -2px 4px 30px 0px rgba(139, 138, 138, 0.25);
   li {
     cursor: pointer;
     white-space: nowrap;
-    font-size: 24px;
+    font-size: 20px;
 
     div {
       color: #111;
-
       font-family: Pretendard;
-      font-size: 24px;
+      font-size: 20px;
       padding: 10px 20px;
     }
-    &:hover {
-      background: rgba(0, 179, 186, 0.1);
+    &:hover a {
+      // background: rgba(0, 179, 186, 0.1);
+      color: #00B3BA;
     }
   }
 `;
@@ -111,7 +116,7 @@ const Lnb = () => {
     {
       name: "회사소개",
       submenu: [
-        { name: "가온메디케어", path: "/about?tab=0" },
+        { name: "가은메디케어", path: "/about?tab=0" },
         { name: "인사말", path: "/about?tab=1" },
       ],
     },

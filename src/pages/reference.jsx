@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const ReferenceMain = styled.div`
+background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%), #FFF;
   .aboutMain {
     position: relative;
     img {

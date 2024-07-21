@@ -4,6 +4,7 @@ import styled from "styled-components";
 import LeaseProcedure from "../component/leaseProcedure";
 
 const RentMain = styled.div`
+background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%), #FFF;
   .rentFeeTitle {
     color: #00b3ba;
     font-family: Pretendard;
@@ -98,7 +99,7 @@ const RentMain = styled.div`
     }
   }
   .rentFee2 {
-    margin-bottom: 200px;
+    padding-bottom: 200px;
   }
   .tab03 {
     width: 1340px;

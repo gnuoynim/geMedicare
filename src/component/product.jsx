@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const ProductMain = styled.div`
+margin: 350px 0;
   > p {
     color: #00b3ba;
     font-family: Pretendard;
@@ -20,17 +21,18 @@ const TabMenu = styled.ul`
   align-items: center;
   justify-content: center;
   list-style: none;
-
+  gap: 40px;
   .submenu {
+    height: 43px;
     color: #333d4b;
     font-family: Pretendard;
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
-    width: 235px;
     text-align: center;
+    letter-spacing: 1.5px;
   }
 
   .focused {
@@ -49,15 +51,14 @@ const TabList = styled.div`
     display: flex;
     justify-content: center;
     > li {
-      width: 348px;
-      height: 348px;
+      width: 300px;
+      height: 300px;
       background-color: rgba(242, 237, 234, 0.6);
       border-radius: 50%;
       position: relative;
       margin-right: 60px;
       cursor: pointer;
       @media (max-width: 1919px) {
-       
         margin-right: 1%;
         }
       >div{
@@ -65,6 +66,7 @@ const TabList = styled.div`
         height: 348px;
       }
       img {
+        width: 132%;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -94,7 +96,7 @@ const TabList = styled.div`
         font-size: 26px;
         text-align: center;
         position: absolute;
-        bottom: -40px;
+        bottom: -60px;
         left: 50%;
         transform: translateX(-50%);
         white-space: nowrap;

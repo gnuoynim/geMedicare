@@ -26,7 +26,6 @@ const FooterWrap = styled.div`
       }
     }
     > span {
-      color: #000;
       text-align: center;
       font-family: Pretendard;
       font-size: 20px;

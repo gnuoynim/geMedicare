@@ -3,6 +3,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const ProductMain = styled.div`
+background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%), #FFF;
   .productMain {
     position: relative;
 
@@ -353,8 +354,7 @@ const ProductInfo = () => {
                         <span className="subTitle">Kröber 4.0</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      전자식 유량조절과 함께 31db의 저소음에 장점이 있어 신생아 사용시 매우 적합한 모델로 설계되었습니다. 
                       </p>
                       <dl>
                         <dt>산소유량 0.1~5 LPM</dt>
@@ -375,8 +375,7 @@ const ProductInfo = () => {
                       <span className="subTitle">VitaOxy 510</span>
                     </p>
                     <p className="description">
-                      고유의 내구성과 아날로그 제어 방식으로 장애물을
-                      최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                    쉬운 인터페이스 설계와 함께 기기사용의 편리함을 추구하며, 익숙한 아날로그 제어방식까지 갖추고 있어 사용의 편리함을 추구하고 있습니다.
                     </p>
                   </div>
                   <div className="explain">
@@ -387,8 +386,7 @@ const ProductInfo = () => {
                         <span className="subTitle">VitaOxy 510</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      쉬운 인터페이스 설계와 함께 기기사용의 편리함을 추구하며, 익숙한 아날로그 제어방식까지 갖추고 있어 사용의 편리함을 추구하고 있습니다.
                       </p>
                       <dl>
                         <dt>산소유량 1~5 LPM</dt>
@@ -409,8 +407,7 @@ const ProductInfo = () => {
                       <span className="subTitle">VitaOxy 540</span>
                     </p>
                     <p className="description">
-                      고유의 내구성과 아날로그 제어 방식으로 장애물을
-                      최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                    기기사용의 편리함에 포커스를 맞춘 설계와 함께 쉬운 제어방식으로 기기사용의 어려움을 최소화 하였으며 저유량 및 고유랑 모두 사용 가능합니다.
                     </p>
                   </div>
                   <div className="explain">
@@ -421,8 +418,7 @@ const ProductInfo = () => {
                         <span className="subTitle">VitaOxy 540</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      기기사용의 편리함에 포커스를 맞춘 설계와 함께 쉬운 제어방식으로 기기사용의 어려움을 최소화 하였으며 저유량 및 고유랑 모두 사용 가능합니다.
                       </p>
                       <dl>
                         <dt>산소유량 1~5 LPM</dt>
@@ -448,8 +444,7 @@ const ProductInfo = () => {
                       <span className="subTitle">Le02</span>
                     </p>
                     <p className="description">
-                      고유의 내구성과 아날로그 제어 방식으로 장애물을
-                      최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                    휴대용 모델 중 가벼운 무게로 설계되었으며 (소형 및 경량) 직관적인 인터페이스를 갖추었으며 흡입모드시 1~3단계로 설계되었습니다. 높은 순도를 자랑하고 있습니다.
                     </p>
                   </div>
                   <div className="explain">
@@ -460,8 +455,7 @@ const ProductInfo = () => {
                         <span className="subTitle">Le02</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      휴대용 모델 중 가벼운 무게로 설계되었으며 (소형 및 경량) 직관적인 인터페이스를 갖추었으며 흡입모드시 1~3단계로 설계되었습니다. 높은 순도를 자랑하고 있습니다.
                       </p>
                       <dl>
                         <dt>산소순도 90±3%</dt>
@@ -481,8 +475,7 @@ const ProductInfo = () => {
                       <span className="subTitle">P2</span>
                     </p>
                     <p className="description">
-                      세밀한 산소 유량을 디지털 조절하여 <br />
-                      소아 및 신생아에게 적합한 최저소음으로 설계되었습니다
+                    간단한 조작과 함께 편리한 휴대성에 강점을 갖고 있으며, 사용가능시간 및 배터리 잔량 표시 등 사용자에게 편리한 인터페이스를 제공하고 있습니다. 흡입모드시 1~5단계로 조절이 가능합니다.
                     </p>
                   </div>
                   <div className="explain">
@@ -493,8 +486,7 @@ const ProductInfo = () => {
                         <span className="subTitle">P2</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      간단한 조작과 함께 편리한 휴대성에 강점을 갖고 있으며, 사용가능시간 및 배터리 잔량 표시 등 사용자에게 편리한 인터페이스를 제공하고 있습니다. 흡입모드시 1~5단계로 조절이 가능합니다.
                       </p>
                       <dl>
                         <dt>산소단계 1~5단계</dt>
@@ -545,8 +537,7 @@ const ProductInfo = () => {
                       <span className="subTitle">VitaOxy 530</span>
                     </p>
                     <p className="description">
-                      고유의 내구성과 아날로그 제어 방식으로 장애물을
-                      최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                    직관적인 인터페이스 구성과 함께 내구성에 초점을 맞춘 설계와 기기 가동시 1~6단계의 조절이 가능합니다. 
                     </p>
                   </div>
                   <div className="explain">
@@ -557,8 +548,7 @@ const ProductInfo = () => {
                         <span className="subTitle">VitaOxy 530</span>
                       </p>
                       <p className="description">
-                        고유의 내구성과 아날로그 제어 방식으로 장애물을
-                        최소화하며, 고유량에서도 고순도 산소를 유지합니다.
+                      직관적인 인터페이스 구성과 함께 내구성에 초점을 맞춘 설계와 기기 가동시 1~6단계의 조절이 가능합니다. 
                       </p>
                       <dl>
                         <dt>산소순도 93±3%</dt>

@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const LeaseContentWrap = styled.div`
   position: relative;
-  height: 1550px;
+  height: 1340px;
   .contentText {
     color: #00b3ba;
     font-family: Pretendard;
@@ -21,7 +21,7 @@ const LeaseContentWrap = styled.div`
 const Background = styled.div`
   img {
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
 `;
 
@@ -29,15 +29,33 @@ const LeaseList = styled.div`
   display: flex;
   justify-content: center;
   > ul {
+    width: 33%;
     position: absolute;
-    top: 30%;
+    top: 38%;
     display: flex;
-
+    justify-content: center;
+    gap: 50px;
     > li {
       /*width: 592px;*/
-      margin-right:32px;
-
+      // margin-right: 50px;+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .leaseText {
+        color: #111;
+        font-family: Pretendard;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        width: 400px;
+        height: 89px;
+        margin: 30px 0;
+        word-break: normal;
+        line-height: 33px;
+      }
       img {
+        width: 70%;
         @media (max-width: 1919px) {
           width: 90%;
         }
@@ -46,20 +64,8 @@ const LeaseList = styled.div`
         margin-right:0;
       }
     }
-
   }
-  .leaseText {
-    color: #111;
-    font-family: Pretendard;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-    height: 89px;
-    margin-top: 20px;
-    word-break: normal;
-  }
+  
   .leaseWrap {
     width: 400px;
     position: relative;

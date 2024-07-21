@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Procedure = styled.div`
+margin: 200px 0;
   > p {
     color: #00b3ba;
     font-family: Pretendard;
@@ -18,10 +19,10 @@ const Procedure = styled.div`
       margin: 0 2%;
     }
     li {
-      padding: 40px 51px;
-      width: 425px;
-      height: 600px;
-      border-radius: 60px;
+      padding: 40px 20px;
+      width: 289.82px;
+      height: 461.54px;
+      border-radius: 40px;
       border: 1px solid #00b3ba;
       background: #f2fbfb;
       margin-right: 20px;
@@ -33,17 +34,18 @@ const Procedure = styled.div`
       > span {
         display: block;
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         background: #333d4b;
         color: #fff;
         font-family: Pretendard;
-        font-size: 40px;
+        font-size: 27px;
         font-style: normal;
         font-weight: 700;
-        line-height: 80px;
+        line-height: 50px;
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 10px;
         @media (max-width: 1919px) {
           width: 60px;
           height: 60px;
@@ -54,31 +56,35 @@ const Procedure = styled.div`
       }
       > p {
         color: #333d4b;
-        font-size: 40px;
+        font-size: 27px;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 15px;
         @media (max-width: 1919px) {
           font-size: 2rem;
           position: relative;
           left: 50%;
           transform: translateX(-50%);
           width: fit-content;
-         
+          margin-top: 10px;
         }
       }
       > div {
         color: #6b7684;
         font-family: Pretendard;
-        font-size: 22px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%; /* 33px */
         letter-spacing: 0.33px;
+        padding: 0px 11px;
       }
       > img {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        top: 18px;
+        width: 165px;
         @media (max-width: 1919px) {
           width: 90%;
         }
@@ -87,6 +93,8 @@ const Procedure = styled.div`
     li:nth-of-type(2) {
       background: #e6f8f9;
       img {
+        padding-top: 7px;
+        width: 200px;
         @media (max-width: 1919px) {
           width: 100%;
           bottom: -11%;
@@ -96,6 +104,9 @@ const Procedure = styled.div`
     li:nth-of-type(3) {
       background: #d9f4f5;
       img {
+        width: 266px;
+        padding-top: 21px;
+        padding-left: 16px;
         @media (max-width: 1919px) {
           width: 120%;
           bottom: -16%;
@@ -106,10 +117,17 @@ const Procedure = styled.div`
     li:nth-of-type(4) {
         background: #ccf0f1;
         p {
-          letter-spacing: 0.8px;
+          height: 40.5px;
+          letter-spacing: -2px;
           line-height: 34px;
+          @media (max-width: 1919px) {
+            font-size: 1.7rem;
+          }
         }
         > img {
+          width: 225px;
+          padding-top: 20px;
+          padding-right: 22px;
           @media (max-width: 1919px) {
             width: 93%;
             bottom: -10%;
