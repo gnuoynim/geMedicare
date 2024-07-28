@@ -16,7 +16,6 @@ const CounselingWrap = styled.div`
     height: auto;
   }
   > img {
-  
     @media (max-width: 1919px) {
       width: 80%;
       position: relative;
@@ -61,8 +60,14 @@ const CounselingWrap = styled.div`
         line-height: 56px;
         margin-right: 20px;
         cursor: pointer;
-        img{
-            margin-left: 15px;
+        display: flex;
+        align-items: center;
+        img {
+          margin-left: 15px;
+        }
+        a {
+          display: flex;
+          align-items: center;
         }
       }
     }

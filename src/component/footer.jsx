@@ -20,7 +20,7 @@ const FooterWrap = styled.div`
         }
     ul {
       padding-left: 74px;
-
+      line-height: 1.9rem;
       li {
         opacity: 0.8;
       }

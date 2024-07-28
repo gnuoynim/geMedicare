@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import Faq from "../component/faq";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const ReferenceMain = styled.div`
 background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%), #FFF;
-  .aboutMain {
+padding-bottom: 200px;  
+.aboutMain {
     position: relative;
     img {
       width: 100%;
@@ -44,7 +46,7 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
     }
   }
   .tabContent{
-    height: 260vh;
+    /*height: 260vh;*/
    
     img{
         position: relative;
@@ -84,7 +86,7 @@ const Reference = () => {
           className={activeTab === 1 ? "active" : ""}
           onClick={() => handleTabClick(1)}
         >
-          사용방법
+          자주묻는 질문 FAQ
         </li>
       </ul>
       <div className="tabContent">
@@ -92,7 +94,7 @@ const Reference = () => {
            <img src="/asset/Frame 86700.png"/>
         )}
         {activeTab === 1 && (
-        <></>
+        <Faq></Faq>
         )}
       </div>
     </ReferenceMain>

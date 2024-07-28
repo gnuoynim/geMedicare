@@ -81,12 +81,14 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
           position: relative;
           left: 50%;
           transform: translateX(-50%);
+          line-height: 58px;
         @media (max-width: 1919px) {
           font-size: 2rem;
           width: 70%;
           position: relative;
           left: 50%;
           transform: translateX(-50%);
+          line-height: 58px;
         }
       }
     }
@@ -103,7 +105,7 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
         font-style: normal;
         font-weight: 700;
         width: 1180px;
-
+     
         .mint {
           color: #00b3ba;
         }
@@ -114,6 +116,7 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
         font-size: 36px;
         font-weight: 400;
         margin: 40px 0;
+        line-height: 58px;
       }
       > p:nth-of-type(3) {
         color: #333d4b;

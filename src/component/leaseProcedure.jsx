@@ -116,6 +116,7 @@ margin: 200px 0;
     }
     li:nth-of-type(4) {
         background: #ccf0f1;
+        margin-right: 0;
         p {
           height: 40.5px;
           letter-spacing: -2px;

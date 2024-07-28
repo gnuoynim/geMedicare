@@ -1,8 +1,13 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const ProductMain = styled.div`
-margin: 350px 0;
+.swiper{
+  width: 1200px !important;
+}
+margin: 260px 0;
   > p {
     color: #00b3ba;
     font-family: Pretendard;
@@ -47,6 +52,15 @@ const TabMenu = styled.ul`
 
 const TabList = styled.div`
   margin-top: 80px;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
   ul {
     display: flex;
     justify-content: center;
@@ -60,8 +74,8 @@ const TabList = styled.div`
       cursor: pointer;
       @media (max-width: 1919px) {
         margin-right: 1%;
-        }
-      >div{
+      }
+      > div {
         width: 348px;
         height: 348px;
       }
@@ -90,13 +104,18 @@ const TabList = styled.div`
       .yk80b {
         width: 100%;
       }
-      .trilogy{  width: 110%;}
+      .trilogy {
+        width: 110%;
+      }
+      .Le02{
+        width: 90%;
+      }
       span {
         color: #555;
         font-size: 26px;
         text-align: center;
         position: absolute;
-        bottom: -60px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
         white-space: nowrap;
@@ -133,6 +152,11 @@ const Product = () => {
           name: "비타옥시 540",
           className: "vitaoxy540",
         },
+        {
+          img: "/asset/킹온 P2-O5E.png",
+          name: "킹온 P2-O5E",
+          className: "킹온 P2-O5E",
+        },
       ],
     },
     {
@@ -146,6 +170,7 @@ const Product = () => {
         },
         { img: "/asset/P2.png", name: "P2", className: "p2" },
         { img: "/asset/p2-s4.png", name: "p2-s4", className: "p2s4" },
+        { img: "/asset/Le02.png", name: "레오투(휴대용)", className: "Le02" },
       ],
     },
     {
@@ -173,6 +198,11 @@ const Product = () => {
           img: "/asset/YK-80B.png",
           name: "휴대용 산소포화도 측정기1",
           className: "yk80b",
+        },
+        {
+          img: "/asset/넬코 베드사이드.png",
+          name: "넬코 베드사이드",
+          className: "NellcorBedsid",
         },
         {
           img: "/asset/Pc-60A.png",
@@ -204,20 +234,24 @@ const Product = () => {
         </TabMenu>
 
         <TabList>
-          <ul>
+          <Swiper spaceBetween={20} slidesPerView={3}>
             {menuArr[currentTab].products.map((product, index) => (
-              <li key={index}>
-                <div>
-                  <img
-                    src={product.img}
-                    alt={product.name}
-                    className={product.className}
-                  />
-                  <span>{product.name}</span>
-                </div>
-              </li>
+              <SwiperSlide key={index}>
+                <ul>
+                  <li>
+                    <div>
+                      <img
+                        src={product.img}
+                        alt={product.name}
+                        className={product.className}
+                      />
+                      <span>{product.name}</span>
+                    </div>
+                  </li>
+                </ul>
+              </SwiperSlide>
             ))}
-          </ul>
+          </Swiper>
         </TabList>
       </div>
     </ProductMain>

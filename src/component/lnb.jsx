@@ -1,51 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 
-const LnbWrap = styled.ul`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  padding-right: 24px;
-  > li {
-    color: #111;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 1.5vh 1.5vw;
-    // margin: 0 2.5vw;
-    white-space: nowrap;
-    position: relative;
-    cursor: pointer;
-
-    &:nth-of-type(1) {
-      margin: 0;
-    }
-    &:nth-last-child(1) {
-      border-radius: 99px;
-      background: #00b3ba;
-      &:hover a {
-        
-      }
-      a {
-        color: #fff;
-      }
-    }
-    .inquiry {
-      color: #fff;
-      padding: 14px 40px;
-      border-radius: 99px;
-      background: #00b3ba;
-    }
-  }
-`;
-
 const SubDep = styled.div`
+  display: none;
   width: 200px;
   height: 150px;
   position: absolute;
@@ -54,6 +13,7 @@ const SubDep = styled.div`
   left: 50%;
   transform: translateX(-50%);
 `;
+
 const Submenu = styled.ul`
   display: ${(props) => (props.isOpen ? "block" : "none")};
   list-style: none;
@@ -71,7 +31,6 @@ const Submenu = styled.ul`
     cursor: pointer;
     white-space: nowrap;
     font-size: 20px;
-
     div {
       color: #111;
       font-family: Pretendard;
@@ -79,8 +38,41 @@ const Submenu = styled.ul`
       padding: 10px 20px;
     }
     &:hover a {
-      // background: rgba(0, 179, 186, 0.1);
-      color: #00B3BA;
+      color: #00b3ba;
+    }
+  }
+`;
+
+const LnbWrap = styled.ul`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-right: 24px;
+  > li {
+    color: #111;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.5vh 1.5vw;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+
+    &:nth-of-type(1) {
+      margin: 0;
+    }
+    &:nth-last-child(1) {
+      border-radius: 99px;
+      background: #00b3ba;
+      a {
+        color: #fff;
+      }
+    }
+    &:hover ${SubDep} {
+      display: block;
     }
   }
 `;
@@ -93,25 +85,27 @@ const StyledLink = styled(Link)`
 const Lnb = () => {
   const navigate = useNavigate();
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
+
   const handleLinkClick = (e, path) => {
     if (path) {
-      e.preventDefault(); // 기본 이벤트 방지
+      e.preventDefault();
       navigate(path);
     } else {
-      // path가 없으면 footer로 스크롤
       window.scrollTo({
-        top: document.getElementById('footer').offsetTop,
-        behavior: 'smooth'
+        top: document.getElementById("footer").offsetTop,
+        behavior: "smooth",
       });
     }
   };
+
   const focusRef = useRef(null);
 
   useEffect(() => {
     if (focusRef.current) {
-      focusRef.current.focus();  // 포커스 설정
+      focusRef.current.focus();
     }
   }, []);
+
   const menuItems = [
     {
       name: "회사소개",
@@ -121,23 +115,29 @@ const Lnb = () => {
       ],
     },
     {
-      name: "제품정보",
+      name: "제품 정보",
       submenu: [
-        { name: "산소발생기", path: "/ProductInfo?tab=1" },
+        { name: "산소 발생기", path: "/ProductInfo?tab=1" },
         { name: "인공호흡기", path: "/ProductInfo?tab=3" },
-        { name: "기타제품 및 악세서리", path: "/ProductInfo?tab=4" },
-        /*"인공호흡기", "기타제품 및 악세서리"*/
+        { name: "기타 제품 및 액세서리", path: "/ProductInfo?tab=4" },
       ],
     },
     {
-      name: "임대방법",
+      name: "임대 방법",
       submenu: [
-        { name: "산소발생기 임대방법", path: "/rent?tab=0" },
-        { name: "인공호흡기 임대방법", path: "/rent?tab=1" },
-        { name: "산소치료 관련질환안내", path: "/rent?tab=2" },
+        { name: "산소발생기 임대 방법", path: "/rent?tab=0" },
+        { name: "인공호흡기 임대 방법", path: "/rent?tab=1" },
+        { name: "산소치료 관련 질환 안내", path: "/rent?tab=2" },
+        { name: "인공호흡기 관련질환안내", path: "/rent?tab=3" },
       ],
     },
-    { name: "자료실", submenu: [{ name: "임대후기", path: "/Reference" }] },
+    {
+      name: "자료실",
+      submenu: [
+        { name: "임대 후기", path: "/reference?tab=0" },
+        { name: "자주 묻는 질문", path: "/reference?tab=1" },
+      ],
+    },
     { name: "문의하기", submenu: [] },
   ];
 
