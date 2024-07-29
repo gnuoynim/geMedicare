@@ -111,10 +111,10 @@ const MainVisual = () => {
     <MainSlider>
       <Swiper
         autoplay={{
-          //delay: 4000,
-          //disableOnInteraction: false,
+          delay: 4000,
+          disableOnInteraction: false,
         }}
-        //modules={[Autoplay, Pagination, Navigation]}
+       modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>

@@ -493,7 +493,7 @@ const ProductInfo = () => {
     others: [
       {
         id: "NellcorBedside",
-        img: "/asset/넬코 베드사이드.png",
+        img: "/asset/nellco.png",
         title: "넬코 베드사이드",
         subTitle: "NellcorBedsid",
         description:

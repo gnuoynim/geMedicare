@@ -115,18 +115,18 @@ const Lnb = () => {
       ],
     },
     {
-      name: "제품 정보",
+      name: "제품정보",
       submenu: [
-        { name: "산소 발생기", path: "/ProductInfo?tab=1" },
-        { name: "인공호흡기", path: "/ProductInfo?tab=3" },
-        { name: "기타 제품 및 액세서리", path: "/ProductInfo?tab=4" },
+        { name: "가정용 산소발생기", path: "/ProductInfo?tab=1" },
+        { name: "가정용 인공호흡기", path: "/ProductInfo?tab=3" },
+        { name: "기타제품 및 액세서리", path: "/ProductInfo?tab=4" },
       ],
     },
     {
       name: "임대 방법",
       submenu: [
-        { name: "산소발생기 임대 방법", path: "/rent?tab=0" },
-        { name: "인공호흡기 임대 방법", path: "/rent?tab=1" },
+        { name: "산소발생기 임대방법", path: "/rent?tab=0" },
+        { name: "인공호흡기 임대방법", path: "/rent?tab=1" },
         { name: "산소치료 관련 질환 안내", path: "/rent?tab=2" },
         { name: "인공호흡기 관련질환안내", path: "/rent?tab=3" },
       ],

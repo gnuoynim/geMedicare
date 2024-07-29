@@ -200,7 +200,7 @@ const Product = () => {
           className: "yk80b",
         },
         {
-          img: "/asset/넬코 베드사이드.png",
+          img: "/asset/nellco.png",
           name: "넬코 베드사이드",
           className: "NellcorBedsid",
         },
