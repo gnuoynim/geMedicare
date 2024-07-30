@@ -1,13 +1,19 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ProductMain = styled.div`
-.swiper{
-  width: 1200px !important;
-}
-margin: 260px 0;
+  .swiper {
+    width: 1200px !important;
+    .swiper-button-prev, .swiper-button-next {
+      color: #00b3babd;
+    }
+  }
+  margin: 260px 0;
   > p {
     color: #00b3ba;
     font-family: Pretendard;
@@ -70,10 +76,10 @@ const TabList = styled.div`
       background-color: rgba(242, 237, 234, 0.6);
       border-radius: 50%;
       position: relative;
-      margin-right: 60px;
+
       cursor: pointer;
       @media (max-width: 1919px) {
-        margin-right: 1%;
+
       }
       > div {
         width: 348px;
@@ -107,7 +113,7 @@ const TabList = styled.div`
       .trilogy {
         width: 110%;
       }
-      .Le02{
+      .Le02 {
         width: 90%;
       }
       span {
@@ -234,7 +240,14 @@ const Product = () => {
         </TabMenu>
 
         <TabList>
-          <Swiper spaceBetween={20} slidesPerView={3}>
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={3}
+            loop={true}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {menuArr[currentTab].products.map((product, index) => (
               <SwiperSlide key={index}>
                 <ul>

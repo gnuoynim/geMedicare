@@ -482,7 +482,7 @@ const ProductInfo = () => {
         title: "필립스 Trilogy Evo",
         subTitle: "Trilogy Evo",
         description:
-          "세밀한 산소 유량을 디지털 조절하여 소아 및 신생아에게 적합한 최저 소음으로 설계되었습니다",
+          "",
         details: [
           "적용환자 : 소아~성인 침습적(기도절개) 혹은 비침습적(마스크)적용가능",
           "8인치 풀터치스크린 컬러LED",

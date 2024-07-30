@@ -127,15 +127,15 @@ const Lnb = () => {
       submenu: [
         { name: "산소발생기 임대방법", path: "/rent?tab=0" },
         { name: "인공호흡기 임대방법", path: "/rent?tab=1" },
-        { name: "산소치료 관련 질환 안내", path: "/rent?tab=2" },
+        { name: "산소치료 관련질환안내", path: "/rent?tab=2" },
         { name: "인공호흡기 관련질환안내", path: "/rent?tab=3" },
       ],
     },
     {
       name: "자료실",
       submenu: [
-        { name: "임대 후기", path: "/reference?tab=0" },
-        { name: "자주 묻는 질문", path: "/reference?tab=1" },
+        { name: "임대후기", path: "/reference?tab=0" },
+        { name: "자주 묻는질문", path: "/reference?tab=1" },
       ],
     },
     { name: "문의하기", submenu: [] },

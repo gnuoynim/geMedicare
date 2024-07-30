@@ -227,7 +227,7 @@ const Rent = () => {
                 <div className="row">
                   <div>건강보험가입자</div>
                   <div>180,000원 (90%)</div>
-                  <div className="highlight">2,000원 (10%)</div>
+                  <div className="highlight">20,000원 (10%)</div>
                 </div>
                 <div className="row">
                   <div>의료급여 1,2종 또는 차상위계층</div>

@@ -111,12 +111,7 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
         }
       }
       > p:nth-of-type(2) {
-        color: #333d4b;
-        font-family: Pretendard;
-        font-size: 36px;
-        font-weight: 400;
-        margin: 40px 0;
-        line-height: 58px;
+       
       }
       > p:nth-of-type(3) {
         color: #333d4b;
@@ -126,6 +121,15 @@ background: linear-gradient(180deg, #FFF 36.58%, rgba(205, 233, 240, 0.50) 100%)
         text-align: right;
         font-weight: 700;
       }
+      .greetingText{
+        color: #333d4b;
+        font-family: Pretendard;
+        font-size: 34px;
+        font-weight: 400;
+        margin: 40px 0;
+        line-height: 58px;
+      }
+
     }
     .promise {
       > p {
@@ -228,7 +232,7 @@ const About = () => {
               가은메디케어는 <span className="mint">신뢰</span>와{" "}
               <span className="mint">정직</span>을 약속드립니다.
             </p>
-            <p>
+            <p className="greetingText">
               저희 가은메디케어는 홈케어 서비스를 제공하는 기업으로서
               <br />
               가정용 산소발생기 임대 서비스와, 가정용 인공호흡기 임대서비스를
