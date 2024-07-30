@@ -138,25 +138,23 @@ margin: 200px 0;
   }
 `;
 
-const LeaseProcedure = () => {
+const LeaseProcedure = ({ step1Title, step1Description }) => {
   return (
     <Procedure>
       <p>임대절차</p>
       <ul>
         <li>
           <span>1</span>
-          <p>서류발급</p>
-          <div>
-            병원 외래진료 혹은 퇴원시에 산소치료 처방전과 산소치료 급여대상자
-            등록신청서를 발급 받으세요
-          </div>
+          <p>{step1Title}</p>
+          <div>{step1Description}</div>
+         
           <img src="/asset/contract checkmark button.png" />
         </li>
         <li>
           <span>2</span>
           <p>전화상담 진행</p>
           <div>
-            1661-0259 가은메디케어 상담센터로 연락하여 상담을 진행하세요
+            1661-0259 가은메디케어 상담 센터로 연락하여 상담을 진행하세요.
           </div>
           <img src="/asset/Man chatting remotely with female colleague.png" />
         </li>
@@ -164,8 +162,7 @@ const LeaseProcedure = () => {
           <span>3</span>
           <p>방문 및 설치</p>
           <div>
-            전문가가 방문하여 서류 진행부터 기기설치 사용방법 안내까지
-            진행해드립니다
+            전문가가 방문하여 서류 진행부터 기기설치 사용방법 안내까지 진행해 드립니다.
           </div>
           <img src="/asset/house.png" />
         </li>
@@ -173,7 +170,7 @@ const LeaseProcedure = () => {
           <span>4</span>
           <p>기기 사용 및 정기방문</p>
           <div>
-            정기적으로 방문하여 기기 유지관리와 각종 소모품을 제공해드립니다
+            정기적으로 방문하여 기기 유지관리와 각종 소모품을 제공해 드립니다.
           </div>
           <img src="/asset/young man holding laptop and pointing up.png" />
         </li>

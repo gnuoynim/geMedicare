@@ -12,7 +12,10 @@ const Home = () => {
     <>
       <MainVisual />
       <Service />
-      <LeaseProcedure />
+      <LeaseProcedure
+        step1Title="서류발급"
+        step1Description="병원 외래진료 혹은 퇴원시에 산소치료 처방전과 산소치료 급여대상자 등록신청서를 발급 받으세요"
+      />
       <Product />
       <Lease />
       <Counseling />

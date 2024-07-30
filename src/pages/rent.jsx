@@ -159,6 +159,8 @@ const Rent = () => {
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
+
+
   return (
     <RentMain>
       <div className="rentMain">
@@ -194,7 +196,10 @@ const Rent = () => {
       <div className="tabContent">
         {activeTab === 0 && (
           <div className="rentProcess">
-            <LeaseProcedure />
+             <LeaseProcedure 
+              step1Title="서류발급"
+              step1Description="병원 외래진료 혹은 퇴원시에 산소치료 처방전과 산소치료 급여대상자 등록신청서를 발급 받으세요"
+            />
             <p className="rentFeeTitle">기기별 월 임대료 안내</p>
             <div className="rentFee">
               <div className="table-container">
@@ -240,7 +245,10 @@ const Rent = () => {
         )}
         {activeTab === 1 && (
           <div className="rentProcess">
-            <LeaseProcedure />
+          <LeaseProcedure 
+              step1Title="전문가의 판단"
+              step1Description="병원에서 인공호흡기가 필요하다고 이야기 한 경우 또는 인공호흡기 처방전을 발급받았다면"
+            />
             <p className="rentFeeTitle">인공호흡기 월 임대료 안내</p>
             <div className="rentFee">
               <div className="table-container">
